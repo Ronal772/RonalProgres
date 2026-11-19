@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#09090b">
+<title>RONAL PROGRES</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<div class="wrap">
+<header>
+<div><h1 id="brand" aria-label="RONAL PROGRES"></h1><div class="mute"><span id="title"></span><span id="sync">Memuat…</span></div></div>
+<div class="nav"><button id="exp">Ekspor</button><button id="imp">Impor</button><button id="cfgb">Sinkron GitHub</button><button id="prev" aria-label="Bulan sebelumnya">‹</button><button id="now">Bulan ini</button><button id="next" aria-label="Bulan berikutnya">›</button></div>
+</header>
+<section class="stats" id="stats"></section>
+<section class="card">
+<h2>Matriks kebiasaan</h2>
+<div class="scroll"><table id="mx"></table></div>
+<div class="legend"><span>■ Selesai</span><span>□ Terlewat</span><span>Kotak bersinar: hari ini</span><span>Ketuk kotak untuk menandai</span></div>
+<form id="add"><input id="nh" placeholder="Tambah kebiasaan baru" maxlength="40" aria-label="Nama kebiasaan"><button class="acc">Tambah kebiasaan</button></form>
+</section>
+<section class="grid2">
+<div class="card"><h2>Tren konsistensi harian</h2><div id="trend"></div></div>
+<div class="card"><h2>Kebiasaan terbaik</h2><ul class="top" id="top"></ul></div>
+</section>
+</div>
+<input type="file" id="file" accept="application/json" hidden>
+<dialog id="dlg"><form id="cf"><h2>Sinkron lewat GitHub</h2><p class="mute">Isi dengan repo tempat website ini disimpan. Progres disimpan di file data.json, jadi bisa dibuka dari desktop dan HP.</p><label>Username GitHub<input id="go" autocomplete="off"></label><label>Nama repo<input id="gr" autocomplete="off"></label><label>Token (izin Contents: Read and write)<input id="gt" type="password" autocomplete="off"></label><div class="row"><button type="button" id="gs" class="acc">Simpan dan sinkron</button><button type="button" id="gx">Putuskan</button><button type="button" id="gc">Tutup</button></div></form></dialog>
+<script src="app.js"></script>
+</body>
+</html>
